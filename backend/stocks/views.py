@@ -20,6 +20,5 @@ class StockView(ListCreateAPIView):
   def create(self, request, *args, **kwargs):
     serializer = self.get_serializer(data=request.data, many=isinstance(request.data, list))
     serializer.is_valid(raise_exception=True)
-    stock_created = []
     serializer.save()
     return Response("Successfully added all entries", status.HTTP_201_CREATED)
