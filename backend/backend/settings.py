@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=9^8f1v%+=c16=p(yo-!8$s5!%*h75mk0fr4sog&$yeszjbp57
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -111,6 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CORS_ALLOW_ALL_ORIGINS=True
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
